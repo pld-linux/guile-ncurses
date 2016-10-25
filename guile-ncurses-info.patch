@@ -1,0 +1,14 @@
+--- guile-ncurses-2.0/doc/guile-ncurses.texi.orig	2016-10-21 18:17:39.000000000 +0200
++++ guile-ncurses-2.0/doc/guile-ncurses.texi	2016-10-25 05:34:45.738732494 +0200
+@@ -5,6 +5,11 @@
+ @include version.texi
+ @settitle GUILE NCURSES @value{VERSION}
+ 
++@dircategory The Algorithmic Language Scheme:
++@direntry
++* Guile-Ncurses: (guile-ncurses).	Ncurses for Guile
++@end direntry
++
+ @syncodeindex fn cp
+ @syncodeindex vr cp
+ @syncodeindex ky cp
