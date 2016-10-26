@@ -19,7 +19,6 @@ BuildRequires:	pkgconfig
 BuildRequires:	texinfo
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
-Requires(post,postun):	/sbin/ldconfig
 Requires:	guile >= 5:2.0.11
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
