@@ -1,12 +1,12 @@
 Summary:	Guile-Ncurses - Guile library with functions for creating text user interface
 Summary(pl.UTF-8):	Guile-Ncurses - biblioteka Guile z funkcjami do tworzenia tekstowego interfejsu użytkownika
 Name:		guile-ncurses
-Version:	2.0
+Version:	2.1
 Release:	1
 License:	LGPL v3+
 Group:		Libraries
 Source0:	http://ftp.gnu.org/gnu/guile-ncurses/%{name}-%{version}.tar.gz
-# Source0-md5:	fde12f98ec699f167ab37288e085273b
+# Source0-md5:	d978009acaf1d0fc5041f04743172ce2
 Patch0:		%{name}-info.patch
 URL:		http://www.gnu.org/software/guile-ncurses/
 BuildRequires:	autoconf >= 2.60
