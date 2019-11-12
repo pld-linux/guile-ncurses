@@ -1,17 +1,17 @@
 Summary:	Guile-Ncurses - Guile library with functions for creating text user interface
 Summary(pl.UTF-8):	Guile-Ncurses - biblioteka Guile z funkcjami do tworzenia tekstowego interfejsu użytkownika
 Name:		guile-ncurses
-Version:	2.2
+Version:	3.0
 Release:	1
 License:	LGPL v3+
 Group:		Libraries
-Source0:	http://ftp.gnu.org/gnu/guile-ncurses/%{name}-%{version}.tar.gz
-# Source0-md5:	33a04e48df0a0c84c7b91cbaa4d42444
+Source0:	https://ftp.gnu.org/gnu/guile-ncurses/%{name}-%{version}.tar.gz
+# Source0-md5:	7f81b6faef5f89bad5dc6b2b64c56063
 Patch0:		%{name}-info.patch
 URL:		http://www.gnu.org/software/guile-ncurses/
 BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
-BuildRequires:	guile-devel >= 5:2.0.11
+BuildRequires:	guile-devel >= 5:2.2
 BuildRequires:	libtool >= 2:2
 BuildRequires:	ncurses-devel >= 5
 BuildRequires:	ncurses-ext-devel >= 5
@@ -19,7 +19,7 @@ BuildRequires:	pkgconfig
 BuildRequires:	texinfo
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
-Requires:	guile >= 5:2.0.11
+Requires:	guile >= 5:2.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
