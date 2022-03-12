@@ -2,7 +2,7 @@ Summary:	Guile-Ncurses - Guile library with functions for creating text user int
 Summary(pl.UTF-8):	Guile-Ncurses - biblioteka Guile z funkcjami do tworzenia tekstowego interfejsu użytkownika
 Name:		guile-ncurses
 Version:	3.0
-Release:	1
+Release:	2
 License:	LGPL v3+
 Group:		Libraries
 Source0:	https://ftp.gnu.org/gnu/guile-ncurses/%{name}-%{version}.tar.gz
@@ -54,7 +54,7 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-%{__rm} $RPM_BUILD_ROOT%{_libdir}/guile/2.*/extensions/*.la
+%{__rm} $RPM_BUILD_ROOT%{_libdir}/guile/3.*/extensions/*.la
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -69,9 +69,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README THANKS TODO
 %attr(755,root,root) %{_bindir}/guile-ncurses-shell
-# TODO: add dir to guile if more packages use it
-%dir %{_libdir}/guile/2.*/extensions
-%attr(755,root,root) %{_libdir}/guile/2.*/extensions/libguile-ncurses.so*
-%{_libdir}/guile/2.*/site-ccache/ncurses
-%{_datadir}/guile/site/2.*/ncurses
+%attr(755,root,root) %{_libdir}/guile/3.*/extensions/libguile-ncurses.so*
+%{_libdir}/guile/3.*/site-ccache/ncurses
+%{_datadir}/guile/site/3.*/ncurses
 %{_infodir}/guile-ncurses.info*
